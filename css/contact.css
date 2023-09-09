@@ -1,0 +1,135 @@
+/* ========== VARIABLES ========= */
+:root {
+    --color-primary: #84A98C;
+    --color-primary-variant: #52796F;
+
+    --color-dark: #2F3E46;
+    --color-dark-variant: #354F52;
+
+    --color-light: #CAD2C5;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+}
+
+/* ========= Aside ============ */
+
+
+.contact {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-content: center;
+    /* gap: 1rem; */
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: var(--color-dark-variant);
+}
+
+.contact__aside {
+    /* position: relative; */
+    top: 0;
+    left: 1rem;
+    /* width: clamp(40vw, 45vw, 60vw); */
+    /* height: 50rem; */
+    /* border: 2px solid white; */
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--color-light);
+}
+
+.contact__aside img {
+    width: 100%;
+    padding-left: 4rem;
+    margin: 2rem auto;
+}
+
+
+.contact__form {
+    display: flex;
+    flex-flow: column nowrap;
+    /* border: 2px solid coral; */
+    padding: 5rem;
+    justify-content: center;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.39);
+    opacity: 1;
+    padding-left: 5px;
+    /* Firefox */
+}
+
+.contact__form #email {
+    width: 80%;
+    line-height: 2rem;
+    padding: 3px 5px;
+    margin-left: 2rem;
+    border-radius: 12px;
+    background-color: var(--color-primary-variant);
+    color: var(--color-light);
+
+}
+
+.contact__form .name input {
+    width: 80%;
+    line-height: 2rem;
+    padding: 3px 5px;
+    margin-left: 2rem;
+    border-radius: 12px;
+    background-color: var(--color-primary-variant);
+    color: var(--color-light);
+    margin-bottom: 1rem;
+
+}
+
+.contact__form button {
+    margin: 2rem 0 0 2rem;
+    background-color: var(--color-dark);
+}
+
+.contact__form textarea {
+    margin-top: 1rem;
+    width: 80%;
+    line-height: 2rem;
+    padding: 3px 5px;
+    margin-left: 2rem;
+    border-radius: 12px;
+    background-color: var(--color-primary-variant);
+    color: var(--color-light);
+
+}
+
+textarea::placeholder {
+    font-size: 1rem;
+}
+
+/* =========== Media Queries ============ */
+
+@media screen and (max-width:800px) {
+    .contact__aside {
+        display: none;
+    }
+
+    .contact__container {
+        display: block;
+        border: 2px solid black;
+        padding: 0;
+    }
+
+    .contact__form {
+        margin: 0;
+        padding: 1.7rem 0;
+
+    }
+
+
+}

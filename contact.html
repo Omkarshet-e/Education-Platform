@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script type="module" src="main.js"></script>
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div id="scroll"></div>
+    <!-- ======= START of NAVBAR ========= -->
+    <nav id="navcontainer">
+        <div class="container nav">
+            <div class="nav__logo">
+                <h2><a href="index.html">OMKAR</a></h2>
+            </div>
+
+            <ul class="nav__menu " id="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="nav__togglebtn" id="open-btn"><i class="uil uil-bars"></i></button>
+            <button class="nav__togglebtn" id="close-btn"><i class="uil uil-multiply"></i></button>
+
+        </div>
+
+    </nav>
+
+    <!-- =========== Contact Form ========== -->
+
+    <section class="contact container">
+
+        <div class="contact__container">
+            <div class="contact__aside">
+                <aside>
+                    <h4>Got any Questions??</h4>
+                    <img src="./img/contact-form.svg" alt="Get in contact">
+                    <p>Send it right here</p>
+                </aside>
+            </div>
+            <div class="contact__form">
+                <form action="https://formspree.io/f/xeqbkway" method="post">
+                    <div class="name">
+                        <input type="text" name="First Name" id="First Name" placeholder="Enter your first name"
+                            required>
+                        <input type="text" name="Last Name" id="Last Name" placeholder="Enter your last name" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <textarea name="msg" id="msg" rows="5" placeholder="Message..."></textarea>
+                    </div>
+                    <button class="info-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ====== Footer ===== -->
+
+    <footer>
+        <div class=" container">
+            <div class="footer__top">
+
+                <div class="footer__organization">
+                    <h2>Omkar Shete</h2>
+                    <p>Address: - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <br>
+                    <p>Phn no.: - 555-555-5555</p>
+                </div>
+
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="links-terms">
+                    <li><a href="index.html" target="_blank">Terms & Conditions</a></li>
+                    <li><a href="about.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="courses.html" target="_blank">Refund Policy</a></li>
+                </ul>
+
+                <div class="footer__socials">
+                    <h4>Let's Chat</h4>
+                    <ul class="socials">
+                        <li><a href="https://twitter.com/"><i class="uil uil-twitter" target="_blank"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="uil uil-instagram-alt"
+                                    target="_blank"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="uil uil-facebook" target="_blank"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer__down ">
+            <p> Copyright &copy; Omkar Shete</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Back to top -->
+
+    <div class="top">
+        <a href="#scroll"><button id="top-btn"><i class="uil uil-arrow-up"></i></button></a>
+    </div>
+
+
+</body>
+
+</html>
